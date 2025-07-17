@@ -30,22 +30,16 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const slice = createSlice({
     name: '',
-    initialState: {
-        value = 0
-    },
-    reducers: {
-        count: state => {
-            state.value +=1
-        }
-    }
+    initialState: {},
+    reducers: {}
 })
-export const { count } = slice.actions
+export const { } = slice.actions
 export default slice.reducer
 ```
 #### create reducer in store
 ```js
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from "../features/counter/counterSlice"
+import counterReducer from ""
 
 export const store = configureStore({
     reducer: {
